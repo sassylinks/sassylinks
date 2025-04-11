@@ -2,66 +2,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sassy Links</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            color: white;
-            text-align: center;
-        }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid white;
-            margin-bottom: 20px;
-        }
-        .quote {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 90%;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            border-radius: 10px;
-        }
-        .link-btn {
-            display: block;
-            margin: 10px;
-            padding: 12px 24px;
-            background-color: rgba(255, 255, 255, 0.2);
-            color: white;
-            text-decoration: none;
-            border: 1px solid white;
-            border-radius: 25px;
-            transition: 0.3s;
-        }
-        .link-btn:hover {
-            background-color: rgba(255, 255, 255, 0.4);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Sassy Links</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      margin-bottom: 20px;
+    }
+
+    .quote {
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 15px 20px;
+      border-radius: 12px;
+      max-width: 90%;
+    }
+
+    .links a {
+      display: block;
+      margin: 12px 0;
+      padding: 14px 28px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      transition: 0.3s;
+      width: 90%;
+      max-width: 320px;
+      border: 1px solid white;
+    }
+
+    .links a:hover {
+      background-color: #222;
+    }
+
+    .red-emoji {
+      color: red;
+      margin-left: 8px;
+    }
+  </style>
 </head>
 <body>
-    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-   <div class="bio">
-  <p>Here I am, fragmented into all my playful, artistic and spicy little layers — which one will you explore first?</p>
-</div>
 
-<div class="links">
-  <a href="https://privacy.com.br/checkout/sassymaria" target="_blank">Privacy 🇧🇷 🔥 👀 🇧🇷 </a>
-  <a href="https://onlyfans.com/saassymaria" target="_blank">OnlyFans 🍒 🍑 🎥</a>
-  <a href="https://www.loyalfans.com/sassymaria" target="_blank">LoyalFans 💋 💞 🌶️</a>
-</div>
+  <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+
+  <div class="quote">
+    Here I am, fragmented into all my playful, artistic and spicy little layers — which one will you explore first?
+  </div>
+
+  <div class="links">
+    <a href="https://privacy.com.br/checkout/sassymaria" target="_blank">
+      Privacy <span class="red-emoji">🔥👀🇧🇷</span>
+    </a>
+    <a href="https://onlyfans.com/saassymaria" target="_blank">
+      OnlyFans <span class="red-emoji">🍒🍑🎥</span>
+    </a>
+    <a href="https://www.loyalfans.com/sassymaria" target="_blank">
+      LoyalFans <span class="red-emoji">💋💞🌶️</span>
+    </a>
+  </div>
 
 </body>
 </html>
