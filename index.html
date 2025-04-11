@@ -2,21 +2,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sassy Maria</title>
-  <link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <title>Sassy Links</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            margin-bottom: 20px;
+        }
+        .quote {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 90%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .link-btn {
+            display: block;
+            margin: 10px;
+            padding: 12px 24px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border: 1px solid white;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+        .link-btn:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img src="imagens/profile.jpg" alt="Sassy Maria" class="profile-img" />
-    <h1>Sassy Maria</h1>
-    <p class="bio">Here I am, fragmented in each of my naughty, spontaneous, artistic layers. Which one will satisfy you the most?</p>
-    <div class="links">
-      <a href="https://privacy.com.br/profile/sassymaria" target="_blank">Privacy</a>
-      <a href="https://onlyfans.com/saassymaria" target="_blank">OnlyFans</a>
-      <a href="https://www.loyalfans.com/sassymaria" target="_blank">LoyalFans</a>
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+    <div class="quote">
+        “Here I am, fragmented into all my playful, artistic and spicy little layers — which one will you explore first?”
     </div>
-  </div>
+    <a href="#" class="link-btn">🔗 Privacy</a>
+    <a href="#" class="link-btn">🔗 OnlyFans</a>
+    <a href="#" class="link-btn">🔗 LoyalFans</a>
 </body>
 </html>
