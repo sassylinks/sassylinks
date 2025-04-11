@@ -22,20 +22,39 @@ body {
 }
 
 .bio {
-  font-size: 18px;
-  margin: 20px auto;
-  max-width: 300px;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 30px auto;
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de transparência */
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+  line-height: 1.5;
 }
 
 /* BOTÕES ESTILIZADOS */
 .links a {
   display: block;
-  background-color: #000000; /* fundo preto */
-  color: #fff; /* texto branco */
+  background: #fff; /* Fundo branco sólido */
+  color: #000;
   text-decoration: none;
-  margin: 10px auto;
-  padding: 12px 25px;
+  margin: 20px auto;
+  padding: 16px 28px;
   width: 80%;
+  max-width: 320px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: transform 0.2s ease, background 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+.links a:hover {
+  transform: scale(1.05);
+  background: #f1f1f1;
+}
+
   max-width: 300px;
   border-radius: 25px;
   border: 2px solid #ff0033; /* borda vermelha sexy */
